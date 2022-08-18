@@ -1,0 +1,263 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 1.2rem;
+}
+body {
+	height: calc(100vh);
+	font-family: 'roboto', sans-serif;
+}
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+}
+nav {
+	background-color: aliceblue;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+.navbar {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-links a {
+	padding: 0 10px;
+}
+.nav-links a:nth-of-type(3) {
+	cursor: not-allowed;
+}
+header {
+	position: relative;
+}
+.header-img {
+	position: absolute;
+	height: 800px;
+	width: 100%;
+	background-image: url(../img/mountain-1920.jpg);
+	background-size: cover;
+	background-position: 50% 0%;
+	z-index: -1;
+}
+.header-shadow {
+	height: 800px;
+	background-color: rgb(0, 0, 0, 0.3);
+}
+.header {
+	padding: 0 10px;
+	height: 800px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-weight: 700;
+	z-index: 1;
+}
+.header-text {
+	width: 500px;
+	color: white;
+}
+.header-text h2 {
+	font-size: 1.6rem;
+}
+.header-text p {
+	padding: 40px 0;
+	font-size: 1rem;
+}
+.header-btn {
+	height: 50px;
+	width: 200px;
+	background: none;
+	font-size: 1.2rem;
+	border: 3px solid white;
+	color: white;
+	transition: 1s background-color, 1s color;
+}
+.about-us {
+	padding: 50px;
+}
+.aboutus-box {
+	padding-top: 50px;
+	display: flex;
+}
+.aboutus-circle {
+	padding: 70px;
+	display: block;
+	height: 150px;
+	width: 150px;
+	background-image: url(../img/blackm-_640.jpg);
+	background-size: cover;
+	background-position: 70% 0%;
+	border-radius: 50%;
+}
+.two-us-circle {
+	background-image: url(../img/woman_640.jpg);
+	background-position: 0% 0;
+}
+
+.aboutus-text {
+	padding: 0 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.aboutus-box:nth-of-type(2) {
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: end;
+}
+.offer-section {
+	padding: 50px 0;
+	background-color: #405d78;
+}
+.offer-section h2 {
+	padding-bottom: 50px;
+	font-size: 2rem;
+	text-align: left;
+	color: white;
+}
+.offer-box {
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.offer-square {
+	position: relative;
+	padding: 50px;
+	height: 200px;
+	width: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f1f1f1;
+	text-align: center;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.offer-square .one {
+	position: relative;
+}
+.dot {
+	position: absolute;
+	left: -5%;
+	top: -5%;
+	width: 30px;
+	height: 30px;
+	background-color: #e07a64;
+	border-radius: 50%;
+}
+footer {
+	padding: 50px;
+	background-color: #4e4e4e;
+	color: white;
+}
+.footer-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.fa-brands {
+	padding: 10px;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+	nav {
+		padding: 0 10px;
+	}
+	nav h1 {
+		font-size: 1rem;
+	}
+	.nav-links {
+		display: none;
+	}
+	.header-img {
+		height: 550px;
+	}
+	.header-shadow {
+		height: 550px;
+	}
+	.header {
+		height: 550px;
+	}
+	.about-us {
+		padding: 50px 10px;
+	}
+	.about-us {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	.aboutus-text {
+		padding: 50px 0;
+		font-size: 0.8rem;
+		text-align: left;
+	}
+	.aboutus-box {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.offer-section h2 {
+		padding-bottom: 50px;
+		font-size: 1rem;
+		text-align: center;
+	}
+	.offer-box {
+		height: auto;
+	}
+	.offer-square {
+		margin-bottom: 50px;
+		padding: 100px;
+		width: 300px;
+		height: 300px;
+	}
+	.footer-text {
+		text-align: center;
+		justify-content: center;
+	}
+	footer p {
+		padding-bottom: 10px;
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.nav-links {
+		display: none;
+	}
+	.aboutus-text {
+		font-size: 0.9rem;
+	}
+	.offer-section h2 {
+		padding-left: 10px;
+		font-size: 1.6rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	nav {
+		padding: 0;
+	}
+	.nav-links {
+		display: block;
+	}
+	.header-btn:hover {
+		background-color: white;
+		color: black;
+	}
+	.offer-square:hover {
+		transform: scale(1.05);
+	}
+}
